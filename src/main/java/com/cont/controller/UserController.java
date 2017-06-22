@@ -39,6 +39,9 @@ public class UserController {
     	return ResponseUtils.getSuccessAPI(false,"false", RestOperateCode.OP_LOGIN);
     }
 
+    public void testxxx() {
+    	System.out.println("UserController.testxxx()");
+    }
 }
 
 
