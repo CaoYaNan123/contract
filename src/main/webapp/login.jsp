@@ -67,7 +67,7 @@
     			dataType:"json",//text,xml,html,script
     			success:function(data){//data是指后台响应回来的数据它的数据格式取决于dataType
     				if(data.success==true){
-    					alert("登录成功");
+    					//alert("登录成功");
     					location.href = "main.jsp";
     				}else{
     					alert("用户名和密码不对");

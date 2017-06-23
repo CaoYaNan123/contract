@@ -29,7 +29,6 @@ public class UserController {
     	String uname = request.getParameter("uname");
     	String pass = request.getParameter("pass");
     	
-    	
     	List<UserModel> userList = userService.userLogin(uname,pass);
     	if(userList!=null && userList.size()>0){
     		UserModel userInfo = userList.get(0);
@@ -39,9 +38,6 @@ public class UserController {
     	return ResponseUtils.getSuccessAPI(false,"false", RestOperateCode.OP_LOGIN);
     }
 
-    public void testxxx() {
-    	System.out.println("UserController.testxxx()");
-    }
 }
 
 
